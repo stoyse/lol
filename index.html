@@ -12,9 +12,10 @@
       <nav class="navbar container">
         <a href="/" class="logo"><img src="Bilder/parliament-svgrepo-com.svg" style="width: auto; height: 60px;">
   </a>
-        <input type="checkbox" id="toggler" />
-        <label for="toggler"><i class="ri-menu-line"></i></label>
-        <div class="menu">
+        <button class="menu-toggle" id="menu-toggle">
+          <i class="fa fa-bars"></i>
+      </button>
+        <div class="menu" id="menu">
             <ul class="list">
                 <li><a href="/login">Mehr erfahren</a></li>
                 <li><a href="/join">Bilder</a></li>
@@ -107,5 +108,16 @@
 
       </div>
     </footer>
+
+    <script>
+      document.getElementById('menu-toggle').addEventListener('click', function() {
+          var menu = document.getElementById('menu');
+          if (menu.style.display === 'block') {
+              menu.style.display = 'none';
+          } else {
+              menu.style.display = 'block';
+            }
+      });
+  </script>
   </body>
 </html>

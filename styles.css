@@ -248,6 +248,30 @@ footer p {
   .menu-toggle {
       display: block;
   }
+
+  .caption span.border {
+    max-width: 100%;
+    padding: 4vw;
+    font-size: 3vw;
+    letter-spacing: 1.5vw;
+    word-wrap: normal;
+  }
+  .row {
+    display: flex;
+    align-items: center;
+    gap: 15vw;
+  }
+  .img_right {
+    max-width: 100%;
+    height: auto;
+    max-width: 6vw;
+  }
+  
+  .img_left {
+    max-width: 100%;
+    height: auto;
+    max-width: 6vw;
+  }
 }
 
 

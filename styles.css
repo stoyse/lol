@@ -262,15 +262,28 @@ footer p {
     gap: 15vw;
   }
   .img_right {
-    max-width: 100%;
     height: auto;
     max-width: 6vw;
   }
   
   .img_left {
-    max-width: 100%;
     height: auto;
     max-width: 6vw;
+  }
+  .supporter {
+    max-width: 100%;
+  }
+  .supporter-img {
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  footer {
+    flex-direction: column;
+    gap: 4vw;
   }
 }
 

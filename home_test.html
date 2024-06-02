@@ -1,65 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Responsive Text Example</title>
-<style>
-  .bgimg-1 {
-    /* Add any styles needed for the background image */
-    /* Example: height, background, etc. */
-    height: 100vh;
-    background: url('Bilder/51F06E1B-8BC8-4311-97AC-12E6BCD95E1A_1_201_a.jpeg') no-repeat center center;
-    background-size: cover;
-  }
-  .caption {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-  }
-  .caption span.border {
-    display: inline-block;
-    max-width: 100%; /* Ensure the span takes up to the full width of its container */
-    white-space: nowrap;
-  }
-  .caption span.border.large-text {
-    font-size: 3vw;
-    padding: 4vw;
-    letter-spacing: 1.5vw;
-  }
-  .cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #ffcc00;
-    color: #000;
-    text-decoration: none;
-    font-size: 1.2em;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  .cta-button:hover {
-    background-color: #ff9900;
-  }
-  @media (max-width: 962px) {
-    .caption span.border {
-    display: inline-block;
-    max-width: 100%; /* Ensure the span takes up to the full width of its container */
-    word-wrap: now; /* Allow long words to be broken */
-    overflow-wrap: break-word; /* Break words that are too long */
-  }
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Div Link</title>
+    <style>
+        .link-div {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            background-color: lightblue;
+            border: 1px solid #000;
+            margin: 20px;
+        }
+
+        .link-div a {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: block;
+            z-index: 1;
+            text-decoration: none; /* Optional: Remove underline from link */
+        }
+
+        /* Optional: Styling for link content */
+        .link-content {
+            position: relative;
+            z-index: 2;
+        }
+    </style>
 </head>
 <body>
-  <div class="bgimg-1">
-    <div class="caption">
-      <span class="border large-text">Willkommen zum Schüler Bundestag</span><br><br>
-      <span class="border" style="font-size: 15px; letter-spacing: normal;">Entdecke den Deutschen Bundestag als Schüler</span><br>
-      <a href="/joining" class="cta-button">Mach mit!</a>
+
+<div class="link-div">
+    <a href="https://www.example.com"></a>
+    <div class="link-content">
+        <h2>Clickable Div</h2>
+        <p>Clicking anywhere in this div will take you to the link.</p>
     </div>
-  </div>
+</div>
+
 </body>
 </html>

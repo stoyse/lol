@@ -3,11 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Informationen</title>
+    <title>Bewerben</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="icon" type="image/x-icon" href="/Bilder/logo.svg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
+      body {
+        background-image: url("Bilder/bundestag.png");
+        background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+      }
+      .split-2{
+        display: flex;
+    justify-content: center;
+    gap: 10vw;
+    padding-left: 20vw;
+    padding-right: 20vw;
+      }
+      .left {
+  margin-bottom: 17vw;
+    background-color: #333;
+    color: #fff;
+    padding: 10vw;
+    padding-bottom: 4vw;
+    padding-top: 4vw;
+    border-radius: 15%;
+    z-index: 10;
+}
+p {
+  color: #fff;
+}
+.right {
+  margin-bottom: 17vw;
+    background-color: #333;
+    color: #fff;
+    padding: 10vw;
+    padding-bottom: 4vw;
+    padding-top: 4vw;
+    border-radius: 15%;
+}
+
+.button {
+  color: #fff;
+  background-color: rgb(0, 136, 255);
+  width: 20vw;
+}
+@media (max-width: 962px) {
+  .split-2 {
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 9vw;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4vw;
+  }
+  .left {
+    margin: 0;
+  }
+  .center {
+    margin: 0;
+  }
+  .right {
+    margin: 0;
+  }
+}
     </style>
 </head>
 <body>
@@ -31,13 +93,24 @@
   </div>
       </nav>
       </div>
+      <h1>Candidates Assessment Center</h1>
+      <h3>Zentrale Plattformen für Schüler-Bundestag Bewerbungen</h3>
+      <div class="split-2">
+        <div class="left">
+          <a href="/lol"><i class="fa fa-university fa-4x fa-fw" aria-hidden="true" style="color:#fff"></i></a>
+            <h4>Schulen</h4>
+            <p>Diese Plattform ist für Bildungseinrichtungen konzipiert, die ihr Teilnahmeinteresse am PEL bekunden möchten.</p>
+            <button class="button" style="vertical-align:middle" onclick="location.href='/school.html';"><span>Als Schule Bewerben </span></button>
+             </div>
+        <div class="right">
+            <a href="/students"><i class="fa fa-graduation-cap fa-4x fa-fw" aria-hidden="true" style="color: #fff;"></i></a>
+        <h4>Schüler</h4>
+        <p>Dies ist die Bewerbungsplattform für Schülerinnen und Schüler, die am PEL teilnehmen möchten.</p>
+        <button class="button" style="vertical-align:middle" onclick="location.href='/students.html';"><span>Als Schüler Bewerben </span></button>
+        </div>
 
-      <div class="bgimg-2">
-        <div class="caption">
-          <span class="border">Das Projekt</span><br><br>
         </div>
       </div>
-      <h3>Hallo.</h3>
         <footer>
             <div class="footer-logo">
               <a href="/" class="logo"><img src="Bilder/logo.svg" style="width: auto; height: 60px;"></a>

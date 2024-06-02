@@ -24,13 +24,13 @@
             <i class="fa fa-bars"></i>
         </button>
           <div class="menu" id="menu">
-              <ul class="list">
-                  <li><a href="/login">Mehr erfahren</a></li>
-                  <li><a href="/join">Bilder</a></li>
-                  <li><a href="/login">Teilnehmer</a></li>
-                  <li><a href="/login">Unser Team</a></li>
-                  <li><a href="/login" style="background-color: #f97d7d">Login</a></li>
-              </ul>
+            <ul class="list">
+              <li><a href="/information.html">Mehr erfahren</a></li>
+              <li><a href="/bilder.html">Bilder</a></li>
+              <li><a href="/teilnehmer.html">Teilnehmer</a></li>
+              <li><a href="/team.html">Unser Team</a></li>
+              <li><a href="/login.html" style="background-color: #f97d7d">Login</a></li>
+          </ul>
           </div>
       </nav>
       </div>
@@ -102,6 +102,17 @@ Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden 
       
             </div>
           </footer>
+
+          <script>
+            document.getElementById('menu-toggle').addEventListener('click', function() {
+    var menu = document.getElementById('menu');
+    if (menu.style.display === 'block') {
+        menu.style.display = 'none';
+    } else {
+        menu.style.display = 'block';
+      }
+});
+          </script>
 </body>
 
 </html>

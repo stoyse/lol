@@ -3,11 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Impressum</title>
+    <title>Unser Team</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-    </style>
+        .cards {
+  display: flex;
+  justify-content: center;
+  gap: 4vw;
+  margin: 5%;
+  margin-top: 0;
+}
+.row {
+  display: flex;
+  align-items: center;
+  gap: 200px;
+}
+        .card {
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+          transition: 0.3s;
+          width: 25%;
+    height: 70%;
+          border-radius: 5px;
+        }
+        
+        .card:hover {
+          box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+        
+        img {
+          border-radius: 5px 5px 0 0;
+        }
+        
+        .card-container {
+            width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+        }
+        h4 {
+            margin: 0;
+        }
+        p {
+            padding: 0;
+            margin: 10px;
+        }
+        </style>
 </head>
 <body>
   <div class="header">
@@ -30,20 +71,26 @@
   </div>
       </nav>
       </div>
-      <h3>Kontaktieren sie uns</h3>
-      <h4>Für jegliche fragen oder hilfe benutzen sie diese Kontakt Information:</h4>
-      <div class="contact">
-        <div class="mail">
-            <a href="mailto:schulerbundestag@gmail.com" class="fa fa-envelope fa-4x" aria-hidden="true"></a>
-            <h4>E-Mail</h4>
-            <a href="mailto:schulerbundestag@gmail.com">schulerbundestag@gmail.com</a>
+      <h3>Unser Team:</h3>
+      <img src="Bilder/gründer.jpeg" style="max-width: 150px; padding: 5vw; padding-bottom: 0;">
+      <h4>Anthony Jagielski & Julian Stosse</h4>
+      <h3>Präsidentschaft</h3>
+      <div class="cards">
+        <div class="card">
+            <img src="Bilder/img_avatar.png" alt="Avatar" style="width: 100%;">
+            <div class="card-container">
+              <h4><b>Julian Stosse</b></h4> 
+              <p>Präsident</p> 
+            </div>
+          </div>
+          <div class="card">
+            <img src="Bilder/img_avatar.png" alt="Avatar" style="width:100%">
+            <div class="card-container">
+              <h4><b>Anthony Jagielski</b></h4> 
+              <p>Vize-Präsident</p> 
+            </div>
         </div>
-        <div class="phone">
-            <a href="tel:+491625945788" class="fa fa-phone fa-4x" aria-hidden="true"></a>
-            <h4>Telefon</h4>
-            <a href="tel:+491625945788">+49 (0) 123 456789</a>
-        </div>
-      </div>
+          </div>
         <footer>
             <div class="footer-logo">
               <a href="/" class="logo"><img src="Bilder/parliament-svgrepo-com.svg" style="width: auto; height: 60px;"></a>
@@ -67,7 +114,6 @@
       
             </div>
           </footer>
-
 
           <script>
             document.getElementById('menu-toggle').addEventListener('click', function() {

@@ -57,6 +57,10 @@ nav a:hover {
   background-color: #babababd;
 }
 
+.login-button {
+  background-color: #f97d7d;
+}
+
 body, html {
   height: 100%;
   margin: 0;

@@ -17,8 +17,58 @@
   align-content: center;
   justify-content: center;
 }
+.banner {
+  display: flex;
+  flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,0,0,1) 26%, rgba(255,204,0,1) 100%);
+    color: #333;
+}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  border: none;
+  color: #242424;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  background-color: transparent;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+}
 
-    </style>
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+  </style>
     <div class="header">
       <nav class="navbar container">
         <a href="/" class="logo"><img src="Bilder/logo.svg" style="width: auto; height: 60px;">
@@ -44,10 +94,12 @@
       <div class="caption">
         <span class="border">Willkommen zum Schüler Bundestag</span><br><br>
         <span class="border-small" style="font-size: 15px; letter-spacing: normal;">Entdecke den Deutschen Bundestag als Schüler</span><br>
-        <a href="/joining" class="cta-button">Mach mit!</a>
       </div>
     </div>
-    
+    <div class="banner">
+      <h3>Willst du auch eine einzigartige erfahrung machen</h3>
+      <i class="fa fa-arrow-right" aria-hidden="true"></i>
+      <button class="button" style="vertical-align:middle"><span>Mach mit! </span></button>    </div>
     <p style="padding:5px 15px">This example creates a half page background image. Try to resize the browser window to see how it always will cover 50% of the screen, and that it scales nicely on all screen sizes.</p>
     <br>
     <br>

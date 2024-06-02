@@ -68,6 +68,55 @@
   right: 0;
 }
 
+.split-3 {
+  display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    gap: 2vw;
+    margin: 2vw;
+}
+
+.left {
+  margin-bottom: 17vw;
+    background-color: #333;
+    color: #fff;
+    padding: 10vw;
+    padding-bottom: 4vw;
+    padding-top: 4vw;
+    border-radius: 15%;
+}
+.center {
+  margin-bottom: 10vw;
+    background-color: #333;
+    color: #fff;
+    padding: 10vw;
+    padding-bottom: 4vw;
+    padding-top: 4vw;
+    border-radius: 15%;
+    margin-top: 7vw;
+}
+.right {
+  margin-bottom: 13.5vw;
+    background-color: #333;
+    color: #fff;
+    padding: 10vw;
+    padding-bottom: 4vw;
+    padding-top: 4vw;
+    border-radius: 15%;
+    margin-top: 3.5vw;
+}
+@media (max-width: 962px) {
+  .split-3 {
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 9vw;
+    justify-content: center;
+    align-items: center;
+  }
+}
   </style>
     <div class="header">
       <nav class="navbar container">
@@ -104,9 +153,25 @@
     <br>
     <br>
     <br>
-    <div class="contact">
 
+
+    <h3>Unser Konzept:</h3>
+    <div class="split-3">
+      <div class="left">
+        <i class="fa fa-bullseye fa-4x fa-fw" aria-hidden="true"></i>
+        <h4>Das Ziel</h4>
+      </div>
+      <div class="center">
+      <i class="fa fa-lightbulb-o fa-4x fa-fw" aria-hidden="true"></i>
+      <h4>blabla</h4>
     </div>
+      <div class="right">
+      <i class="fa fa-compass fa-4x fa-fw" aria-hidden="true"></i>
+      <h4>blabla</h4>
+  </div>
+    </div>
+
+
     <div class="supporter">
       <h3>Sie Unterstützen uns:</h3>
       <div class="supporter-img">

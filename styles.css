@@ -256,10 +256,14 @@ footer p {
   }
 
   .menu-toggle {
-      display: block;
+      display: flex;
       border-radius: 15%;
       margin-right: 5%;
 
+  }
+
+  .fa {
+    width: 20%;
   }
 
   .caption span.border {

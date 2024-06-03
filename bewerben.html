@@ -9,11 +9,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
       body {
-        background-image: url("Bilder/bundestag.png");
-        background-repeat: no-repeat;
-  background-attachment: fixed;  
-  background-size: cover;
-      }
+          margin: 0;
+          height: 100%;
+          background-image: url("Bilder/bundestag.png");
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+          background-position: center; /* Center the image horizontally */
+        }
       .split-2{
         display: flex;
     justify-content: center;
@@ -47,7 +50,7 @@ p {
 .button {
   color: #fff;
   background-color: rgb(0, 136, 255);
-  width: 20vw;
+  width: 100%;
 }
 @media (max-width: 962px) {
   .split-2 {

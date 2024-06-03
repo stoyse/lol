@@ -76,6 +76,8 @@ body, html {
   background-size: cover;
   position: relative;
   /*/opacity: 0.65;/*/
+  height: 60vw;
+  max-height: 600px;
 }
 
 .bgimg-2 {
@@ -86,6 +88,8 @@ body, html {
   background-size: cover;
   position: relative;
   /*/opacity: 0.65;/*/
+  height: 60vw;
+  max-height: 600px;
 }
 
 .caption {
@@ -358,13 +362,14 @@ footer p {
           display: inline-block;
           position: relative;
           transition: 0.5s;
+          font-size: 70%;
         }
         
         .button span:after {
           content: '\00bb';
           position: absolute;
           opacity: 0;
-          top: 0;
+          top: 30%;
           right: -20px;
           transition: 0.5s;
         }

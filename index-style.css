@@ -131,16 +131,29 @@ align-items: center;
 margin-bottom: 4vw;
 }
 .left {
-margin: 10vw;
+margin: 0vw;
+margin-top: 10vw;
 margin-bottom: 0;
-max-width: 29%;
+max-width: 80%;
 }
 .center {
 margin: 0vw;
-max-width: 29%;
+max-width: 80%;
 }
 .right {
 margin: 0vw;
-max-width: 29%;
+max-width: 80%;
 }
+}
+
+@media (min-width: 600px) {
+    .left {
+        max-width: 50%;
+    }
+    .center {
+        max-width: 50%;
+    }
+    .right {
+        max-width: 50%;
+    }
 }

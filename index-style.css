@@ -5,6 +5,13 @@ flex-wrap: nowrap;
 align-content: center;
 justify-content: center;
 }
+h4 {
+    color: #babababd;
+}
+b {
+    color: #fff;
+}
+
 .banner {
 display: flex;
 flex-direction: row;
@@ -69,7 +76,7 @@ margin: 2vw;
 margin-bottom: 17vw;
 background-color: #333;
 color: #fff;
-padding: 10vw;
+padding: 4vw;
 padding-bottom: 4vw;
 padding-top: 4vw;
 border-radius: 15%;
@@ -83,7 +90,7 @@ box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.19), 0px 10px 10px rgba(0, 0, 0, 0.23)
 margin-bottom: 10vw;
 background-color: #333;
 color: #fff;
-padding: 10vw;
+padding: 4vw;
 padding-bottom: 4vw;
 padding-top: 4vw;
 border-radius: 15%;
@@ -98,7 +105,7 @@ box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.19), 0px 10px 10px rgba(0, 0, 0, 0.23)
 margin-bottom: 13.5vw;
 background-color: #333;
 color: #fff;
-padding: 10vw;
+padding: 4vw;
 padding-bottom: 4vw;
 padding-top: 4vw;
 border-radius: 15%;
@@ -124,12 +131,16 @@ align-items: center;
 margin-bottom: 4vw;
 }
 .left {
-margin: 0;
+margin: 10vw;
+margin-bottom: 0;
+max-width: 29%;
 }
 .center {
-margin: 0;
+margin: 0vw;
+max-width: 29%;
 }
 .right {
-margin: 0;
+margin: 0vw;
+max-width: 29%;
 }
 }
